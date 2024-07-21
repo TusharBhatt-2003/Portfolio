@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    
+    background: rgb(238, 255, 250);
+}
+
+h1 {
+   color: rgb(4, 69, 107);
+   text-align: center;
+
+}

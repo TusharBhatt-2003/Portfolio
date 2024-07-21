@@ -804,3 +804,55 @@ body {
 }
 
 
+#contact {
+  margin: 0px; /* Adjust spacing as needed */
+  padding: 10px;
+}
+
+#contact h2 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 80px;
+  margin: 0%;
+  padding: 0%;
+}
+
+
+.contact-info {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px; /* Spacing between elements */
+  text-align: center; /* Optional: Center content within each element */
+}
+
+.contact-info a {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align icons and text vertically */
+  justify-content: center; /* Center content vertically within each element */
+  height: 100%; /* Ensure elements fill available space */
+  text-decoration: none;
+  color: #00408f;
+}
+
+.contact-info a i {
+  margin-bottom: 10px; /* Adjust spacing between icon and text */
+
+}
+
+/* Media Queries for Different Screen Sizes (Optional) */
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+ 
+
+.copyright {
+  text-align: center; /* Center the text */
+  margin-bottom: 10px; /* Add spacing from the bottom of the page */
+  font-size: 0.8em; /* Adjust font size as needed */
+  
+}
+
+

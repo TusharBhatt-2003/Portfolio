@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
 }
@@ -12,7 +11,7 @@ body {
 
   @media only screen and (max-width: 768px) {
     body {
-      background-image: url("image/bg.jpg"); /* Replace with your image path */
+      background-image: src="image/bg.jpg"; /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;

@@ -719,6 +719,7 @@ body {
 .project p {
   font-family: "Fira Code", monospace;
   margin-top: 5px;
+    text-align: center;
 }
 .project a {
   color: #ffffff;

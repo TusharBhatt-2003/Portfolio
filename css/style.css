@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,17 +7,32 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    min-height: 100vh; /* Fills viewport height */
+    min-height: 100vh;
   }
 
   @media only screen and (max-width: 768px) {
     body {
-      background-image: src="image/bg.jpg"; /* Replace with your image path */
+      background-image: url("image/bg.jpg"); /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;
     }
   }
+
+  @media only screen and (max-width: 450px) {
+    body {
+      background-image: url("image/bg.jpg"); /* Replace with your image path */
+      background-repeat: repeat; /* Set background image repetition (optional) */
+      background-size: contain; /* Set background image size (optional) */
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+  }
+
+
   
   nav {
     position: fixed;
@@ -24,7 +40,6 @@ body {
     top: 50%;
     transform: translate(50%, -50%); /* Center navigation bar */
     background-color: #e3e0e0;
-     /* Adjust background color */
     border-radius: 25px;
     padding:5px 5px;
   }
@@ -57,7 +72,7 @@ body {
 }
 
   main {
-    flex: 1; /* Main content takes up remaining space */
+    flex: 1; 
     padding: 10px; /* Adjust padding for content sections */
   }
   
@@ -78,6 +93,17 @@ body {
   
     main {
       padding: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    nav {
+      padding: 10px;
+      
+    }
+  
+    main {
+      padding: 20px;
     }
   }
   
@@ -388,17 +414,14 @@ body {
   opacity: 1;
 }
 
-/* Media Queries for Different Screen Sizes (Optional) */
+
 @media (max-width: 768px) {
-  /* Adjust card layout for smaller screens (e.g., 2 cards per row) */
   .card {
     width: calc(50% - 10px);
     padding-bottom: auto;
   }
 }
-
 @media (max-width: 480px) {
-  /* Adjust card layout for even smaller screens (e.g., 1 card per row) */
   .card {
     width: 100%;
     padding-bottom: auto;
@@ -719,7 +742,7 @@ body {
 .project p {
   font-family: "Fira Code", monospace;
   margin-top: 5px;
-    text-align: center;
+  text-align: center;
 }
 .project a {
   color: #ffffff;
@@ -728,9 +751,10 @@ body {
 }
 
 .projectbutton {
-  display: block; /* Make link behave like block content */
+  display:contents; /* Make link behave like block content */
   margin: 0;
-
+  align-content: center;
+  
 }
 
 .projectbutton {
@@ -750,7 +774,6 @@ body {
   touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
-  vertical-align: middle;
   white-space: nowrap;
 }
 
@@ -782,7 +805,7 @@ body {
 }
 
 .project a:hover {
-  text-decoration: underline;
+  text-decoration:none;
 }
 
 .technologies {
@@ -811,47 +834,51 @@ body {
 
 #contact h2 {
   font-family: "Audiowide", sans-serif;
-  font-size: 80px;
-  margin: 0%;
+  font-size: 40px;
+  margin: 2%;
   padding: 0%;
 }
 
 
 .contact-info {
+ 
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 10px; /* Spacing between elements */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px; /* Spacing between elements */
   text-align: center; /* Optional: Center content within each element */
 }
 
-.contact-info a {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Align icons and text vertically */
-  justify-content: center; /* Center content vertically within each element */
-  height: 100%; /* Ensure elements fill available space */
-  text-decoration: none;
-  color: #00408f;
+.contact-info div {
+  height: fit-content;
+  margin: 5px;
+  padding: 10px;
 }
 
-.contact-info a i {
-  margin-bottom: 10px; /* Adjust spacing between icon and text */
 
-}
 
-/* Media Queries for Different Screen Sizes (Optional) */
+
+
+
 @media (max-width: 768px) {
   .contact-info {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr;
   }
 }
  
+@media (max-width: 450px) {
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+
+ 
 .copyright {
-  text-align: center; /* Center the text */
-  margin-bottom: 10px; /* Add spacing from the bottom of the page */
-  font-size: 0.8em; /* Adjust font size as needed */
+  text-align: center; 
+  margin: 10px;
+  font-size: 0.8em; 
+  padding-top: 25px;
   
 }
 

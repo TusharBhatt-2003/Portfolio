@@ -828,8 +828,12 @@ body {
 
 
 #contact {
-  margin: 0px; /* Adjust spacing as needed */
-  padding: 10px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5; 
+
+  flex-wrap: wrap; 
 }
 
 #contact h2 {

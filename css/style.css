@@ -818,7 +818,18 @@ body {
   display: inline-block;
   margin-right: 10px;
 }
+.light {
+  background-color: rgb(227, 227, 227);
+  border-radius: 7px;
+  padding: 2px;
+}
 
+.dark {
+  color: white;
+  background-color: rgb(57, 57, 57);
+  border-radius: 7px;
+  padding: 2px;
+}
 /* Media Queries for Different Screen Sizes (Optional) */
 @media (max-width: 768px) {
   .project-list {

@@ -12,7 +12,7 @@ body {
 
   @media only screen and (max-width: 768px) {
     body {
-      background-image: url("image/bg.jpg"); /* Replace with your image path */
+      background-image: url("/image/backimage.jpg"); /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;
@@ -21,7 +21,7 @@ body {
 
   @media only screen and (max-width: 450px) {
     body {
-      background-image: url("image/bg.jpg"); /* Replace with your image path */
+      background-image: url("/image/backimage.jpg"); /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;
@@ -812,11 +812,21 @@ body {
   margin-top: 10px;
   list-style: none; /* Remove default bullet points */
   padding: 0;
+  ;
 }
-
+.percent {
+  background: #f6ebeb;
+  border-radius: 5px;
+  padding: 2px;
+  text-decoration: none;
+}
+.techlang {
+  text-decoration: underline rgb(104, 0, 0);
+}
 .technologies li {
   display: inline-block;
   margin-right: 10px;
+  line-height: 20px;
 }
 .light {
   background-color: rgb(227, 227, 227);
@@ -830,6 +840,7 @@ body {
   border-radius: 7px;
   padding: 2px;
 }
+
 /* Media Queries for Different Screen Sizes (Optional) */
 @media (max-width: 768px) {
   .project-list {

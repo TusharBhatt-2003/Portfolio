@@ -12,7 +12,7 @@ body {
 
   @media only screen and (max-width: 768px) {
     body {
-      background-image: url("./image/backimage.jpg"); /* Replace with your image path */
+      background-image: url("image/backimage.jpg"); /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;
@@ -21,7 +21,7 @@ body {
 
   @media only screen and (max-width: 450px) {
     body {
-      background-image: url("./image/backimage.jpg"); /* Replace with your image path */
+      background-image: url("image/backimage.jpg"); /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;

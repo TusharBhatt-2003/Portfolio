@@ -12,7 +12,7 @@ body {
 
   @media only screen and (max-width: 768px) {
     body {
-      background-image: url("bg.png"); /* Replace with your image path */
+      background-image: url("https://github.com/TusharBhatt-2003/Portfolio/blob/f0121b4822e622acd1b35e3047b34d7995ec3e8c/bg.png"); /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;
@@ -21,7 +21,7 @@ body {
 
   @media only screen and (max-width: 450px) {
     body {
-      background-image: url("bg.png"); /* Replace with your image path */
+      background-image: url("https://github.com/TusharBhatt-2003/Portfolio/blob/f0121b4822e622acd1b35e3047b34d7995ec3e8c/bg.png"); /* Replace with your image path */
       background-repeat: repeat; /* Set background image repetition (optional) */
       background-size: contain; /* Set background image size (optional) */
       background-position: center;

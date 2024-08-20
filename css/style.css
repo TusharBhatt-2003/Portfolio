@@ -2,10 +2,15 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+  }
 
 
-
-  
   nav {
     position: fixed;
     right: 5%;
@@ -49,7 +54,8 @@ html {
   }
   
   section {
-    margin-bottom: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
   }
   
   h1, h2 {
@@ -80,6 +86,9 @@ html {
   }
   
   #welcome {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 10px ;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Content on left, image on right */
@@ -168,44 +177,25 @@ html {
   }
 
   .button-55 {
-    align-self: center;
-    background-color: #fff;
-    background-image: none;
-    background-position: 0 90%;
-    background-repeat: repeat no-repeat;
-    background-size: 4px 3px;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    box-sizing: border-box;
-    color: #2a2a2a;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Neucha, sans-serif;
-    font-size: 1rem;
-    line-height: 23px;
-    outline: none;
-    padding: .75rem;
+    border: 2px solid rgb(101, 0, 0);
+    border-radius: 15px;
+    color: white;
+    background: rgb(113, 0, 0);
+    padding: 0.5em;
     text-decoration: none;
-    transition: all 235ms ease-in-out;
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Fira Code", monospace;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
+    0 6px 16px 0 rgba(0,0,0,0.19)
   }
-  
+
   .button-55:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-    color: #920101;
-  }
-  
-  .button-55:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    background: rgb(161, 31, 31);
+    color:rgb(255, 236, 217) ;
+    border: 2px solid rgb(59, 0, 0);
   }
 
   .underline {
@@ -216,6 +206,10 @@ html {
   #about {
     padding: 20px;
     text-align: center; /* Center content for about section */
+    border: 2px solid rgb(150, 2, 2);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 10px;
   }
   #about h2 {
     margin-top: 0;
@@ -237,12 +231,6 @@ html {
     color: #970d00;
     font-family: "Fira Code", monospace;
   }
-
-
-.bold {
-  font-weight: 900;
-  font-style: normal;
-}
 
 .ui {
   color: white;
@@ -333,78 +321,7 @@ html {
   }
 }
 
-.card {
-  display: none;
-  transition: opacity 0.3s;
-  width: 300px;
-  height: 300px;
-  background: rgb(228, 227, 227);
-  padding: .4em;
-  padding-bottom: 100px;
-  margin: 40px auto;
-  border-radius: 6px;
-}
-.card-image {
-  /* Ensure aspect ratio of 1:1 (square) */
-  padding-bottom: 100%; /* Set padding-bottom based on desired aspect ratio */
-  position: relative; /* Enable positioning for image */
-  overflow: hidden; /* Hide overflow for aspect ratio technique */
-}
 
-.card-image img {
-  /* Position image to fill the available space */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.card-image:hover {
-  transform: scale(0.98);
-}
-
-.category {
-  text-transform: uppercase;
-  font-size: 0.7em;
-  font-weight: 600;
-  color: rgb(150, 1, 1);
-  padding: 20px 7px 10px;
-}
-
-.category:hover {
-  cursor: pointer;
-}
-
-.heading {
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-  padding-top: 0px;
-}
-
-.heading:hover {
-  cursor: pointer;
-  color: rgb(48, 0, 0);
-}
-
-.card.show {
-  display: block;
-  opacity: 1;
-}
-
-
-@media (max-width: 768px) {
-  .card {
-    width: calc(50% - 10px);
-    padding-bottom: auto;
-  }
-}
-@media (max-width: 480px) {
-  .card {
-    width: 100%;
-    padding-bottom: auto;
-  }
-}
 
 
 @media (max-width: 600px) {
@@ -415,7 +332,8 @@ html {
 }
 
 #resume {
-  margin-top: 50px; /* Adjust spacing as needed */
+  margin-top: 2em;
+  margin-bottom: 2em; /* Adjust spacing as needed */
   padding: 20px;
   border-radius: 5px;
   background-color: #f5f5f5; /* Light gray background */
@@ -685,7 +603,8 @@ body {
 
 
 #projects {
-  margin-top: 0px; /* Adjust spacing as needed */
+  margin-top: 2em;
+  margin-bottom: 2em; /* Adjust spacing as needed */
   padding: 0px;
 }
 #projects h2 {
@@ -697,13 +616,13 @@ body {
 }
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(4, minmax(250px, 1fr)); /* Responsive columns */
   grid-gap: 10px; /* Spacing between projects */
 }
 
 .project {
   padding: 10px;
-  border: 2px solid rgb(150, 2, 2);; /* Optional border */
+  border: 2px solid rgb(150, 2, 2); /* Optional border */
   border-radius: 10px; /* Optional rounded corners */
  
 }
@@ -773,13 +692,22 @@ body {
   transform: translate(2px, 2px);
 }
 
+.bold {
+  font-weight: 900;
+  font-style: normal;
+}
+
 @media (min-width: 768px) {
   .projectbutton {
   position: relative;
-
-    
-    
   }
+}
+
+@media (max-width: 720px) {
+  .project-list{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
 }
 
 .project a:hover {
@@ -821,9 +749,11 @@ body {
 
 
 
+
 #contact {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
   border-radius: 5px;
   background-color: #f5f5f5; 
 
@@ -851,7 +781,7 @@ body {
   height: fit-content;
   margin: 5px;
   padding: 10px;
-}
+} 
 
 
 

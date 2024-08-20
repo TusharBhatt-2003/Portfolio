@@ -238,6 +238,12 @@ html {
     font-family: "Fira Code", monospace;
   }
 
+
+.bold {
+  font-weight: 900;
+  font-style: normal;
+}
+
 .ui {
   color: white;
   background-color: #9c5858;

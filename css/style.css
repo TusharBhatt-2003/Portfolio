@@ -819,12 +819,6 @@ body {
   padding: 2px;
 }
 
-/* Media Queries for Different Screen Sizes (Optional) */
-@media (max-width: 768px) {
-  .project-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
-  }
-}
 
 
 #contact {

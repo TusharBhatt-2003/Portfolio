@@ -43,7 +43,9 @@ nav {
   }
   
 .navBtn:hover{
-        fill: rgba(161, 0, 0, 0.952);
+        fill: rgba(179, 90, 0, 0.952);
+        width: 2em !important;
+        height: auto !important;
   }
 
   main {
@@ -64,7 +66,8 @@ nav {
   /* Responsive adjustments for smaller screens */
   @media only screen and (max-width: 768px) {
     nav {
-      padding: 10px;
+       padding: 0.5em;
+      margin: 0.5em;
     }
   
     main {
@@ -74,7 +77,8 @@ nav {
 
   @media only screen and (max-width: 450px) {
     nav {
-      padding: 10px;
+       padding: 0.5em;
+      margin: 0.5em;
       
     }
   

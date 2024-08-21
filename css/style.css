@@ -42,11 +42,9 @@ body {
     
   }
   
-  nav img {
-    width: 20px; /* Adjust image size */
-    padding: 2px; /* Add spacing between image and text */
-    margin: 1px;
-}
+.navBtn:hover{
+        fill: rgba(161, 0, 0, 0.952);
+  }
 
   main {
     flex: 1; 

@@ -11,16 +11,16 @@ body {
   }
 
 
-  nav {
+nav {
     position: fixed;
     right: 5%;
     top: 50%;
     transform: translate(50%, -50%); /* Center navigation bar */
-    background-color: #e3e0e0;
+    background-color: #e6e6e6;
     border-radius: 25px;
-    padding:5px 5px;
+    padding:0.5em;
+    box-shadow: 1px 1px 10px rgb(161, 161, 161);
   }
-  
   nav ul {
     list-style-type: none;
     padding: 0%;

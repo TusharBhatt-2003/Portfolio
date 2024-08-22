@@ -42,10 +42,11 @@ body {
     fill: #000;  /* Change fill color to black (or your preference) */
     border: 2px solid #fff;  /* Add a white border */
   }
-  .navBtn:hover{
-        fill: rgba(179, 90, 0, 0.952);
-        width: 2em !important;
-        height: auto !important;
+.navBtn:hover{
+        fill: #3c0000;
+        width: 25px ;
+        height: 25px;
+        transition: 50ms;
   }
 
 
@@ -775,6 +776,14 @@ body {
   margin: 5px;
   padding: 10px;
 } 
+.contact-info svg:hover {
+         width: 85px;
+         height: 85px;
+         fill: #93000062;
+         transition: 500ms;
+}
+
+
 
 
 

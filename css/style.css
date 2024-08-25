@@ -439,6 +439,13 @@ body {
   right: 10px; /* Adjust spacing from right */
 }
 
+.skills-list li {
+  margin-bottom: 5px;
+  font-family: "Fira Code", monospace;
+ 
+}
+
+
 .links a {
   margin-left: 10px; /* Space between links */
   color: #000; /* Link color */

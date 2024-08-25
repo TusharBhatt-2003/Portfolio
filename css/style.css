@@ -357,19 +357,6 @@ body {
   margin: 0;
 }
 
-.skills-list li {
-  margin-bottom: 5px;
-  font-family: "Fira Code", monospace;
-  background: #b0070721;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.skills-list li span { /* Style skill level */
-  background: rgba(241, 147, 84, 0.353);
-  margin-left: 5px;
-  border-radius: 10px;
-}
 
 /* Media Queries for Different Screen Sizes (Optional) */
 @media (max-width: 768px) {
@@ -422,12 +409,6 @@ body {
   margin: 0;
   color: #6b0303;
 
-}
-
-body {
-  font-family: Arial, sans-serif; /* Adjust if needed for overall website font */
-  margin: 0;
-  padding: 0;
 }
 
 #resume {

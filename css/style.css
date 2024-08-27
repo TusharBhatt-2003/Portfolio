@@ -80,6 +80,10 @@ body {
   }
   
   #welcome {
+       background-image: url(/image/vector.png);
+    background-size: 25em; /* Ensure the image covers the entire section */
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     margin-top: 2em;
     margin-bottom: 2em;
     border-radius: 10px ;
@@ -119,6 +123,7 @@ body {
       align-items: center; /* Center content vertically */
       padding: 10px; /* Adjust padding for smaller screens */
      margin: 1em;
+        background-image: url();
     }
   
     .welcome-content {
@@ -455,7 +460,20 @@ body {
 .links a:hover {
   text-decoration: underline; /* Underline on hover */
 }
+.CV-btn {
+  border: solid 1.5px #770000;
+  border-radius: 0.5em;
+  padding : 0.5em;
+  color: rgb(116, 0, 0); 
+}
 
+.CV-btn:hover {
+  border: solid 1px #643232;
+  border-radius: 0.5em;
+  padding : 0.5em;
+  color: rgb(91, 39, 39); 
+  background: #ffffff;
+}
 /* Media Queries for Different Screen Sizes (Optional) */
 @media (max-width: 768px) {
   #resume {

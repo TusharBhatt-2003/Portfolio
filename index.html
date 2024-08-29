@@ -36,6 +36,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
   <style>
+
+    #welcome {
+       background-image: url("image/vector.png");
+    background-size: 25em; /* Ensure the image covers the entire section */
+    background-position: right; /* right the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    }
+    
   @media only screen and (max-width: 768px) {
     body {
       background-image: url("image/bg.png"); /* Replace with your image path */
@@ -43,6 +51,8 @@
       background-size: contain; /* Set background image size (optional) */
       background-position: center;
     }
+    #welcome {
+       background-image: none;
   }
 
   @media only screen and (max-width: 450px) {
@@ -56,6 +66,9 @@
       display: flex;
       min-height: 100vh;
     }
+      #welcome {
+       background-image: none;
+  }
   }
 
 </style>

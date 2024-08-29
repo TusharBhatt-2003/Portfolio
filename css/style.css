@@ -82,7 +82,7 @@ body {
   #welcome {
        background-image: url(/image/vector.png);
     background-size: 25em; /* Ensure the image covers the entire section */
-    background-position: right; /* Center the image */
+    background-position: right; /* right the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     margin-top: 2em;
     margin-bottom: 2em;
